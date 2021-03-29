@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset-java
+spec:
+  template: 
+    metadata: 
+      name: pod-java
+      labels:
+        app: label-pod-java
+    spec: 
+      containers:
+        - name: container-java
+          image: lucasvscosta/validador-cpf-turma-devops
+          ports:
+            - containerPort: 8080
+          env: 
+            - name: "DATABASE_URL"
+              value: "" 
+  replicas: 2
+  selector:
+    matchLabels:
+      app: label-pod-java 
+
+
+
+

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nodejs
+  labels:
+    app: label-pod-nodejs
+spec:
+  containers:
+    - name: container-pod-nodejs
+      image: lucasvscosta/validador-cpf-nodejs-turma-devops
+      ports: 
+        - containerPort: 3000
