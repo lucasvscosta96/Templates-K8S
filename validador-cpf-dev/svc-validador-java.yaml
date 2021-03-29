@@ -7,5 +7,5 @@ spec:
   selector:
     app: label-pod-validador-java-dev
   ports:
-    - port: 8082
+    - port: 8081
       nodePort: 30005 #até 32767
