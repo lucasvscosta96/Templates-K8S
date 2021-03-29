@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: label-pod-dev-projeto-fina
+    app: label-pod-dev-projeto-final
   ports:
     - port: 8082
-      nodePort: 30005 #até 32767
+      nodePort: 30007 #até 32767
