@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-projeto-final
+  name: qa-projeto-final
 spec:
   template: 
     metadata: 
-      name: pod-dev-projeto-final
+      name: pod-qa-projeto-final
       labels:
-        app: label-pod-dev-projeto-final
+        app: label-pod-qa-projeto-final
     spec: 
       containers:
-        - name: container-dev-projeto-final
+        - name: container-qa-projeto-final
           image: lucasvscosta/projeto-final:latest
           ports:
             - containerPort: 8082 
   replicas: 2
   selector:
     matchLabels:
-      app: label-pod-dev-projeto-final 
+      app: label-pod-qa-projeto-final 
