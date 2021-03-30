@@ -11,7 +11,7 @@ spec:
     spec: 
       containers:
         - name: container-dev-projeto-final
-          image: lucasvscosta/projeto-final:latest
+          image: lucasvscosta/dev-projeto-final:latest
           ports:
             - containerPort: 8082 
   replicas: 2
